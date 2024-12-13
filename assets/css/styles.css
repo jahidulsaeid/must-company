@@ -451,7 +451,7 @@ header {
         h4 {
           color: #00427a;
         }
-        svg{
+        svg {
           height: 24px;
           width: 24px;
         }
@@ -459,13 +459,77 @@ header {
       img {
         max-width: 328px;
       }
-      ul>li{
+      ul > li {
         color: #979797;
         font-size: 18px;
       }
     }
   }
 }
+/* END */
+
+/* START */
+.avenueSlider {
+  background-color: #242424;
+  padding-top: 160px !important;
+  padding-bottom: 160px !important;
+  .title_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    .title_center {
+      min-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: #fff;
+      }
+      span{
+        color: #f58220;
+      }
+    }
+  }
+  .swiper-wrapper {
+    align-items: center !important;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 320px !important;
+    height: 425px !important;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease !important;
+
+    &.swiper-slide-active {
+      width: 542px !important;
+      height: 709px !important;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
 /* END */
 
 /* START */
@@ -543,7 +607,6 @@ footer {
   }
 }
 /* FOOTER ED */
-
 
 /* START */
 .blurred-img {
@@ -715,14 +778,16 @@ footer {
     .items {
       grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
       .item {
-        svg{
+        svg {
           height: 36px;
           width: 36px;
         }
         img {
           max-width: 734px;
         }
-        h3, h4, p{
+        h3,
+        h4,
+        p {
           font-size: 18px;
         }
       }
@@ -738,7 +803,3 @@ footer {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 }
-
-
-
-

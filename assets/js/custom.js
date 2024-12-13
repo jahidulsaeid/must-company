@@ -10,6 +10,13 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+var swiper = new Swiper(".avenueSlider", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  centeredSlides: true, 
+  loop: true,    
+});
+
 // backToTop
 const backToTopButton = document.querySelector(".backToTop");
 
