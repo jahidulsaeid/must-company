@@ -84,7 +84,19 @@
           </div>
           <div class="items">
             <div class="item item_1">
-              <img src="./assets/images/convenience/1.jpeg" alt="" />
+              <div
+                class="blurred-img"
+                style="
+                  background-image: url(./assets/images/convenience/1-small.jpeg);
+                "
+              >
+                <img
+                  src="./assets/images/convenience/1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+
               <div class="content">
                 <h2>KF GALLERY</h2>
                 <p>
@@ -94,7 +106,19 @@
               </div>
             </div>
             <div class="item item_2">
-              <img src="./assets/images/convenience/2.jpeg" alt="" />
+              <!-- <img src="./assets/images/convenience/2.jpeg" alt="" /> -->
+              <div
+                class="blurred-img"
+                style="
+                  background-image: url(./assets/images/convenience/2-small.jpeg);
+                "
+              >
+                <img
+                  src="./assets/images/convenience/2.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="content">
                 <h2>센터원 Wellness</h2>
                 <p>
@@ -105,7 +129,19 @@
               </div>
             </div>
             <div class="item item_3">
-              <img src="./assets/images/convenience/3.jpeg" alt="" />
+              <!-- <img src="./assets/images/convenience/3.jpeg" alt="" /> -->
+              <div
+              class="blurred-img"
+              style="
+                background-image: url(./assets/images/convenience/3-small.jpeg);
+              "
+            >
+              <img
+                src="./assets/images/convenience/3.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
               <div class="content">
                 <h2>SPARKPLUS</h2>
                 <p>
@@ -354,14 +390,14 @@
 
           <p class="title">주요문의처</p>
         </div>
-        <div class="item">
+        <div class="item backToTop">
           <!-- <img class="icon" src="./assets/images/icons/support.svg" alt="" /> -->
           <svg
             width="32"
             height="32"
             viewBox="0 0 32 32"
             fill="none"
-            class="icon"
+            class="icon backToTop"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -439,7 +475,10 @@
               </svg>
             </div>
             <h4>미래에셋센터원 홈페이지 리뉴얼 안내</h4>
-            <p>미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은 서비스 제공을 위해 불편한...</p>
+            <p>
+              미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은 서비스
+              제공을 위해 불편한...
+            </p>
             <p>2024.09.04(수)</p>
             <!-- <img src="./assets/images/events/1.png" alt=""> -->
           </div>
@@ -487,18 +526,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        // autoplay: {
-        //   delay: 5000,
-        // },
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets", // Default type is 'bullets'
-          clickable: true, // Make the bullets clickable
-          dynamicBullets: true, // Enable dynamic resizing for bullets
-        },
-      });
-    </script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>
